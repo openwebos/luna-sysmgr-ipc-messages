@@ -20,6 +20,8 @@ limitations under the License.
 luna-sysmgr-ipc-messages
 ========================
 
+Summary
+=======
 This is the repository for public header files used by LunaSysMgrIpc, the webOS IPC library used by luna-sysmgr.
 
 How to Build on Linux
