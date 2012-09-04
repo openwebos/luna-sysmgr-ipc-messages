@@ -25,4 +25,4 @@ webos_modules_init(1 0 0 QUALIFIER RC2)
 webos_component(2 0 0)
 
 # install headers in /usr/include/sysmgr-ipc
-install(DIRECTORY include/public/messages/ DESTINATION ${WEBOS_INSTALL_INCLUDEDIR}/sysmgr_ipc)
+install(DIRECTORY include/public/messages/ DESTINATION ${WEBOS_INSTALL_INCLUDEDIR}/sysmgr-ipc)
