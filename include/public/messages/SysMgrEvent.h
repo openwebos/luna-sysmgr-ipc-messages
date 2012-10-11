@@ -88,7 +88,7 @@ struct SysMgrEvent
 	};
 
     // Look in the luna-keymap-headers package
-#if defined(TARGET_DESKTOP) || defined(TARGET_EMULATOR)
+#if !defined(HAS_KEYMAPS)
 	#include "SysMgrDeviceKeydefs.h"
 #else
 	#include <webosDeviceKeydefs.h>
