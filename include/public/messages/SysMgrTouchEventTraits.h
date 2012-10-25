@@ -75,7 +75,11 @@ public:
 			tp.state = (*iter).state();
 			tp.x = (*iter).pos().x() + offsetX;
 			tp.y = (*iter).pos().y() + offsetY;
-            tp.isPrimary = (*iter).isPrimary();
+#if (QT_VERSION < QT_VERSION_CHECK(5, 0, 0))
+                        tp.isPrimary = (*iter).isPrimary();
+#else
+                        tp.isPrimary = false;
+#endif
 		}		
 	}
 
