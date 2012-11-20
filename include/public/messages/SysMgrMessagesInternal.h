@@ -110,6 +110,11 @@ IPC_BEGIN_MESSAGES(View)
     // params: enable focus
     IPC_MESSAGE_ROUTED1(View_Focus, bool)
 
+    // asks application to handle relaunch with specific parameters, only for applications
+    // with handleRelaunch window property enabled
+    // params: arguments
+    IPC_MESSAGE_ROUTED1(View_Relaunch, std::string)
+
     // resize a window to the given dimensions
     // params: width, height, resize buffer
     IPC_MESSAGE_ROUTED3(View_Resize, int, int, bool)
