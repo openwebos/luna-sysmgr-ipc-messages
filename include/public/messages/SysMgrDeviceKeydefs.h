@@ -215,6 +215,8 @@ enum Key {
     Key_CoreNavi_Meta            = 0xE0E7,
     Key_Hold                    = 0xE0E8,
     Key_CoreNavi_Down           = 0xE0E9,
+    Key_CoreNavi_SwipeDown      = 0xE0EA,
+    Key_Keyboard                = 0xE0EB,
 
     // Device "keys" -- sticky
     Key_Slider          = 0xE0F0,
