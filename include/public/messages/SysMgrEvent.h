@@ -1,5 +1,5 @@
 /**
- *  Copyright (c) 2008 - 2012 Hewlett-Packard Development Company, L.P.
+ *  Copyright (c) 2008 - 2013 Hewlett-Packard Development Company, L.P.
  *
  *  Licensed under the Apache License, Version 2.0 (the "License");
  *  you may not use this file except in compliance with the License.
@@ -56,6 +56,7 @@ struct SysMgrEvent
 		Shutdown,
 		Compass,
 		Gyro,
+                MouseWheel,
 		User	  = 0xFF000000,
 		LastType  = 0xFFFFFFFF
 	};
@@ -166,6 +167,13 @@ struct SysMgrEvent
 			float mag_bearing;
 			float true_bearing;
 		};
+
+                struct {
+                        float mouseWheelX;
+                        float mouseWheelY;
+                        int mouseWheelDeltaX;
+                        int mouseWheelDeltaY;
+                };
 	};
 		
 	Key      key;
