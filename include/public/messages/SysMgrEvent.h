@@ -57,6 +57,7 @@ struct SysMgrEvent
 		Compass,
 		Gyro,
                 MouseWheel,
+                MouseHover,
 		User	  = 0xFF000000,
 		LastType  = 0xFFFFFFFF
 	};
@@ -173,6 +174,13 @@ struct SysMgrEvent
                         float mouseWheelY;
                         int mouseWheelDeltaX;
                         int mouseWheelDeltaY;
+                };
+
+                struct {
+                        float mouseHoverOldX;
+                        float mouseHoverOldY;
+                        float mouseHoverX;
+                        float mouseHoverY;
                 };
 	};
 		
