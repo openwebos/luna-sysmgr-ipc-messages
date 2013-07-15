@@ -16,15 +16,10 @@
 #
 # LICENSE@@@
 
-cmake_minimum_required(VERSION 2.8.7)
+libdir=@WEBOS_INSTALL_LIBDIR@
+includedir=@WEBOS_INSTALL_INCLUDEDIR@/sysmgr-ipc
 
-project(LunaSysMgrIpcMessages NONE)
-
-include(webOS/webOS)
-webos_modules_init(1 0 0 QUALIFIER RC2)
-webos_component(2 0 0)
-
-webos_build_pkgconfig()
-
-# install headers in /usr/include/sysmgr-ipc
-install(DIRECTORY include/public/messages/ DESTINATION ${WEBOS_INSTALL_INCLUDEDIR}/sysmgr-ipc)
+Name: luna-sysmgr-ipc-messages
+Description: @WEBOS_PROJECT_SUMMARY@
+Version: @WEBOS_COMPONENT_VERSION@
+Cflags: -I${includedir}
